@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getDatabase, ref, onValue } from "firebase/database";
+import { Link } from 'react-router-dom';
 const TableUser = () => {
   const [userData, setUserData] = useState([]);
   const db = getDatabase();
@@ -52,6 +53,11 @@ const TableUser = () => {
           ))}
         </tbody>
       </table>
+      <div className="text-center mt-8">
+        <Link to="/">
+        <button className="bg-red-500 text-white px-12 py-2 rounded">Log Out</button>
+        </Link>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import Login from "./Components/Login"
+import Register from "./Components/Register"
 import TableUser from "./Components/TableUser"
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
     <>
     <Login/>  
-    <TableUser/>
+    {/* <TableUser/>
+    <Register/> */}
     </>
   )
 }
